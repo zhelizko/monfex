@@ -69,9 +69,9 @@ h1 {
   color: #3333CC;
 }
 
- .people-img {
+.people-img {
   max-width: 1110px;
-}  
+}
 
 .maintext {
   position: absolute;
@@ -259,7 +259,7 @@ h1 {
 
 .about-img__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .about-img__wrapper .about-img__container svg {
@@ -347,7 +347,7 @@ h1 {
   display: flex;
 }
 
-.longtermsvg svg  {
+.longtermsvg svg {
   width: 89px;
   height: 89px;
   display: flex;
@@ -423,10 +423,12 @@ h1 {
   max-width: 350px;
   padding: 0px;
   background: #FFFFFF;
+  padding: 0px 20px;
 }
 
 #fourth>.container>.FirstGrid>.firstgrid-element>.svgtextflex {
   width: 294px;
+  padding-left: 10px;
 }
 
 #fourth>.container>.FirstGrid>.firstgrid-element>.textgrid {
@@ -463,7 +465,7 @@ h1 {
   width: 298px;
 }
 
-.laptopbooksvg svg  {
+.laptopbooksvg svg {
   /* background: url(images/icons.svg) 0px -90px; */
   width: 72px;
   height: 72px;
@@ -473,7 +475,7 @@ h1 {
   padding-right: 22px */
 }
 
-.penbooksvg svg  {
+.penbooksvg svg {
   /* background: url(images/icons.svg) -72px -89px; */
   width: 72px;
   height: 72px;
@@ -482,7 +484,7 @@ h1 {
   /* padding-right: 26px; */
 }
 
-.pencbooksvg svg  {
+.pencbooksvg svg {
   /* background: url(images/icons.svg) -145px -89px; */
   width: 72px;
   height: 72px;
@@ -491,7 +493,7 @@ h1 {
   /* padding-right: 26px; */
 }
 
-.shoutsvg svg  {
+.shoutsvg svg {
   /* background: url(images/icons.svg) -216px -89px; */
   width: 72px;
   height: 72px;
@@ -500,7 +502,7 @@ h1 {
   /* padding-right: 26px; */
 }
 
-.graphsvg svg  {
+.graphsvg svg {
   /* background: url(images/icons.svg) -288px -89px; */
   width: 72px;
   height: 72px;
@@ -509,7 +511,7 @@ h1 {
   /* padding-right: 26px; */
 }
 
-.risingsvg svg  {
+.risingsvg svg {
   /* background: url(images/icons.svg) -360px -89px; */
   width: 72px;
   height: 72px;
@@ -536,7 +538,7 @@ h1 {
 .joinbtn {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 30px 30px 76px 30px;
   /* padding-bottom: 76px;
   padding-top: 72px; */
   font-weight: bold;
@@ -696,6 +698,10 @@ h1 {
   padding-left: 29px;
 }
 
+.acc_ctrl h2 {
+  padding-left: 29px;
+}
+
 .acc_panel {
   background: #F2F2F2;
   display: none;
@@ -708,7 +714,6 @@ h1 {
 
 .img-f svg {
   width: 100%;
-  
 }
 
 .panel {
@@ -864,12 +869,13 @@ h1 {
 }
 
 #seventh>.container {
-  padding: 76px 0px 64px 0px;
+  padding: 76px 20px 64px 20px;
 }
 
 #seventh>.container>.secondtext>p {
   padding-bottom: 70px;
   margin-bottom: 0px;
+  color: #737C85;
 }
 
 #seventh>.container>.SecondGrid>.gridelement {
@@ -1019,9 +1025,11 @@ ul {
   line-height: 18px;
   margin: 0px;
 }
-.footerp{
+
+.footerp {
   margin: 0px;
 }
+
 .textleftimg {
   width: 540px;
   margin-right: 125px;
@@ -1349,8 +1357,12 @@ ul {
   max-width: 1110px;
 }
 
-#Originality {
+/* #Originality {
   padding: 72px 72px 0px 72px;
+} */
+
+#Originality .h2text {
+  padding-top: 72px;
 }
 
 .originality-svg svg {
@@ -1456,7 +1468,7 @@ ul {
 
 .professionalis_svg_direct svg {
   margin-top: 16px;
-  margin-bottom: 33px;
+  margin-bottom: 0px;
   max-width: 445px;
 }
 
@@ -1493,6 +1505,11 @@ ul {
   margin: 14px 0px 18px 0px;
   padding-left: 11px;
   border: 2px solid #C4C4C4;
+  outline: none
+}
+
+#formsvg input:focus {
+  border: 2px solid #000000;
 }
 
 #formsvg select {
@@ -1503,7 +1520,6 @@ ul {
   height: 40px;
   margin: 14px 0px 18px 0px;
   padding-left: 11px;
-  color: #868686;
   background-image: url('../../Monfex/images/arrow-dropdown.svg');
   background-repeat: no-repeat;
   background-size: 16px 17px;
@@ -1512,6 +1528,38 @@ ul {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
+  color: #868686;
+}
+
+#formsvg select option {
+  color: #868686;
+}
+
+#formsvg select option:disabled {
+  color: red;
+}
+
+/*option{
+  
+  color: light
+  }
+  option:not([disabled]){
+  color: dark
+  }*/
+
+/* .first_option{
+  color: #868686;
+} */
+
+/*option {
+  color: gray;
+}
+select {
+  color: black !important;
+}*/
+
+#formsvg select:focus {
+  border: 1px solid #000000;
 }
 
 #formsvg label {
@@ -1546,7 +1594,29 @@ ul {
 
 /* ------------------------------------------------------------------------------------------------ */
 
+@media only screen and (max-width: 1276px) {
+  #Originality p {
+    width: 100%;
+  }
+  .p_img_width {
+    max-width: unset;
+  }
+  #Originality .flexj {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 1139px) {
+  .blockbullet {
+    width: 100%;
+  }
+  .lefttexttone {
+    margin-right: 0px;
+  }
+  .righttexttone {
+    margin-left: 0px;
+  }
   #formsvg .flexj {
     justify-content: center;
   }
@@ -1565,10 +1635,10 @@ ul {
   #notneed .container>.flexj {
     justify-content: center;
   }
-  body {
+  /* body {
     padding-left: 10px;
     padding-right: 10px;
-  }
+  } */
   #footer {
     width: 100%;
     padding-right: 50px;
@@ -1605,6 +1675,10 @@ ul {
     padding-left: 20px;
     flex-wrap: wrap;
     padding-right: 20px;
+    justify-content: center;
+  }
+  #sixth>.container>.text-wrapper-pr>.h2text {
+    justify-content: center;
   }
   #seventh>.container {
     padding-left: 20px;
@@ -1630,6 +1704,13 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
   } */
+  #toneconsistensy .about-img__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .ulimg {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1645,25 +1726,35 @@ ul {
   .oneoffcolumn {
     width: 100%;
   }
-  .blockflex {
-    display: grid;
-    justify-content: center;
-  }
   #second .about-img__wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .lasttext p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .blockflex {
+    display: grid;
+    justify-content: center;
+  }
   .simplicitybigsvg {
     margin-right: 0px;
   }
   #fourth .joinbtn {
     padding: unset;
     margin: unset;
+    margin-top: 30px;
+  }
+  #fourth>.container>.FirstGrid>.firstgrid-element:first-child {
+    padding: 26px;
+    margin-top: 30px;
   }
   #fourth>.container>.FirstGrid>.firstgrid-element {
-    padding: 26px;
+    margin-bottom: 10px;
   }
   #footer>div:nth-child(2)>div:nth-child(2)>div {
     display: grid;
@@ -1779,8 +1870,10 @@ ul {
     font-size: 32px;
     line-height: normal;
   }
-  .h2text {
-    font-size: 40px;
+  #fourth .h2text {
+    font-size: 34px;
+    line-height: 60px;
+    text-align: center;
   }
   #howtowrite h1 {
     font-size: 40px;
@@ -1793,7 +1886,48 @@ ul {
     margin-top: 30px;
   }
   #third {
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .img-guest {
+    max-width: 300px;
+  }
+  #formsvg h1 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .professionalis_svg_direct svg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 350px;
+  }
+  #fifth h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .acc_ctrl h2 {
+    padding-left: 15px;
+    text-align: left;
+    line-height: 10PX;
+  }
+  .acc_ctrl {
+    padding-bottom: 10px;
+  }
+  .acc_ctrl::before{
+    top: 63%;
+  }
+  .acc_ctrl::after{
+    top:63%
+  }
+  #third .h2text {
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+  }
+  #seventh .h2text {
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
   }
 }
 
@@ -1867,14 +2001,14 @@ ul {
   #seventh>.container>.secondtext>p {
     padding-bottom: 0px;
   }
+  #formsvg label {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .about-img__container img {
     max-width: 100%;
-  }
-  #fifth h2 {
-    font-size: 15px;
   }
   .text_img_width .svgtext {
     margin-left: 0px;
@@ -1970,16 +2104,16 @@ ul {
   #third {
     margin: 0px;
   }
-  #third .h2text {
+  /* #third .h2text {
     font-size: 50px;
     line-height: 65px;
     text-align: center;
-  }
-  #fourth .h2text {
+  } */
+  /* #fourth .h2text {
     font-size: 50px;
     line-height: 65px;
     text-align: center;
-  }
+  } */
   #fourth {
     padding-left: 0px;
     padding-right: 0px;
@@ -1992,16 +2126,7 @@ ul {
     text-align: center;
     line-height: 60px;
   }
-  #fourth .h2text {
-    font-size: 36px;
-    line-height: 60px;
-    text-align: center;
-  }
-  #third .h2text {
-    font-size: 36px;
-    line-height: 60px;
-    text-align: center;
-  }
+
   #fifth h2 {
     line-height: 20px;
   }
@@ -2013,18 +2138,9 @@ ul {
   /* .logosvg {
     padding-left: 10px;
   } */
-  #formsvg h1 {
-    font-size: 32px;
-    line-height: normal;
-  }
   .originality-svg svg {
     max-width: 350px;
     margin-right: 0px;
-  }
-  .professionalis_svg_direct svg {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    max-width: 350px;
   }
   .simplicitybigsvg_direct {
     margin-top: 5px;
