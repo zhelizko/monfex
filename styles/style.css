@@ -640,15 +640,16 @@ h1 {
 }
 
 .rectangle {
+  position: absolute;
   height: 36px;
   width: 36px;
   background: #3333CC;
   border-radius: 5px;
-  margin-left: -26px;
-  padding-right: inherit;
+  /*margin-left: -26px;
+  padding-right: inherit;*/
 }
 
-.acc_ctrl:before {
+.rectangle:before {
   background: #FFF;
   content: '';
   height: 2px;
@@ -670,7 +671,7 @@ h1 {
   margin-left: 10px;
 }
 
-.acc_ctrl:after {
+.rectangle:after {
   background: #FFF;
   content: '';
   height: 2px;
@@ -682,7 +683,7 @@ h1 {
   margin-left: 10px;
 }
 
-.acc_ctrl.active:before {
+.acc_ctrl.active .rectangle:before {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -694,12 +695,9 @@ h1 {
   position: relative;
 }
 
-.acc_ctrl h2 {
-  padding-left: 29px;
-}
 
 .acc_ctrl h2 {
-  padding-left: 29px;
+  padding-left: 65px;
 }
 
 .acc_panel {
@@ -1733,7 +1731,7 @@ select {
 }
 
 @media only screen and (max-width: 768px) {
-  .lasttext p{
+  .lasttext p {
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -1902,22 +1900,21 @@ select {
     max-width: 350px;
   }
   #fifth h2 {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
   .acc_ctrl h2 {
-    padding-left: 15px;
     text-align: left;
     line-height: 10PX;
   }
   .acc_ctrl {
     padding-bottom: 10px;
   }
-  .acc_ctrl::before{
+  .acc_ctrl::before {
     top: 63%;
   }
-  .acc_ctrl::after{
-    top:63%
+  .acc_ctrl::after {
+    top: 63%
   }
   #third .h2text {
     font-size: 36px;
@@ -2019,6 +2016,11 @@ select {
 }
 
 @media only screen and (max-width: 375px) {
+  .acc_ctrl {
+    padding: 0px;
+    display: unset;
+    align-items: unset;
+  }
   #third {
     padding-top: 30px;
   }
@@ -2126,9 +2128,11 @@ select {
     text-align: center;
     line-height: 60px;
   }
-
   #fifth h2 {
-    line-height: 20px;
+    line-height: 1.5;
+    text-indent: 40px;
+    max-width: 300px;
+    padding-left: unset;
   }
   #seventh .h2text {
     font-size: 50px;
@@ -2155,5 +2159,56 @@ select {
   }
   #footer>div:nth-child(2) {
     padding-left: unset;
+  }
+  #fifth .acc li:last-child h2 {
+    padding: 0;
+    text-indent: 40px;
+    max-width: 300px;
+  }
+  .rectangle {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+  }
+  .rectangle:before {
+    background: #FFF;
+    content: '';
+    height: 2px;
+    /* margin-right: 37px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 16px;
+    /* margin-left: 10px; */
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .rectangle:after {
+    background: #FFF;
+    content: '';
+    height: 2px;
+    /* margin-right: 37px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    /* margin-left: 10px; */
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .acc li{
+    padding-bottom: 20px;
   }
 }
