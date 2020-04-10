@@ -794,31 +794,26 @@ h1 {
 }
 
 .penlettersvg {
-  background: url(images/icons.svg) -180px 0px;
   width: 48px;
   height: 48px;
 }
 
 .foldersvg {
-  background: url(images/icons.svg) -226px 0px;
   width: 48px;
   height: 48px;
 }
 
 .setingssvg {
-  background: url(images/icons.svg) -274px 0px;
   width: 48px;
   height: 48px;
 }
 
 .lettersvg {
-  background: url(images/icons.svg) -322px 0px;
   width: 48px;
   height: 48px;
 }
 
 .searchsvg {
-  background: url(images/icons.svg) -370px 0px;
   width: 48px;
   height: 48px;
 }
