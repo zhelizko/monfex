@@ -12,16 +12,23 @@
 <body>
     <section id="header">
         <div class="container">
-
-            <a href="index.html">
-                <img src="images/logo-dark.svg" alt="" class="logosvg">
-            </a>
-
-            <div><a class="invisbtn" href="/second.html">JOIN NOW</a></div>
-
+    
+          <a href="index.html">
+            <img src="images/logo-dark.svg" alt="Logo" title="Logo" class="logosvg">
+          </a>
+    
+          <div><a class="joinheader" href="/second.html">JOIN NOW</a></div>
+          <div class="menu">
+            <span class="mobile-btn"></span>
+    
+          </div>
+          <ul class="menu-mobile">
+            <li><a href="index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+            <li><a href="becomeguest.html" itemprop="url"><span itemprop="name">Become A Guest</span></a></li>
+            <li><a href="styleguide.html" itemprop="url"><span itemprop="name">How To Write</span></a></li>
+        </ul>
         </div>
-
-    </section>
+      </section>
     <section id="formsvg">
         <div class="container">
             <h1>Become a Guest Writer For Monfex</h1>
@@ -37,8 +44,8 @@
                         <input type="text" id="live" name="live" value="" placeholder="Enter your town"><br>
 
                         <label for="fnfame">4. Are you interested in one-off tasks or a long-term partnership?</label>
-                        <select id="partnership" name=" partnership" ">
-                            <option value="" disabled selected style='display:none' >Select formattt
+                        <select id="partnership" name=" partnership">
+                            <option value="" disabled selected style='display:none'>Select formattt
                             </option>
                             <option value="au">Australia</option>
                             <option value="ca">Canada</option>
@@ -564,6 +571,11 @@
 
         </section>
     </section>
+  <!-- vendor scripts -->
+  <script src="libs/jquery/jquery-3.5.0.min.js"></script>
+  <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+  <!-- user scripts  -->
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
