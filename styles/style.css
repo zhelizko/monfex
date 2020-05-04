@@ -1955,6 +1955,25 @@ ul {
   .firstgrid-element{
     display: flex;
     margin-top: 15px;
+    height: 260px;
+  }
+  .laptopbooksvg svg{
+    margin: 0px;
+  }
+  .penbooksvg svg{
+    margin: 0px;
+  }
+  .pencbooksvg svg{
+    margin: 0px;
+  }
+  .shoutsvg svg{
+    margin: 0px;
+  }
+  .graphsvg svg{
+    margin: 0px;
+  }
+  .risingsvg svg{
+    margin: 0px;
   }
 
 }
